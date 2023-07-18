@@ -1,22 +1,21 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { createUser } from '../../services/userAPI';
 import Loading from '../../components/Loading';
-
-type HtmlElementType = React.ChangeEvent<
-HTMLInputElement |
-HTMLTextAreaElement |
-HTMLSelectElement>;
+import { HtmlElementType } from '../../types';
 
 function Login() {
   const [loginInfo, setLoginInfo] = useState<any>();
-  const [disableButton, setDisableButton] = useState(true);
+  const [disabledButton, setDisabledButton] = useState(true);
   const [isLoading, setIsLoading] = useState(false);
+  const navigate = useNavigate();
 
   const handleSubmit = () => {
     const getUser = async () => {
       setIsLoading(true);
       await createUser(loginInfo);
       setIsLoading(false);
+      navigate('/search');
     };
     getUser();
   };
@@ -24,10 +23,10 @@ function Login() {
   const handleChange = ({ target }: HtmlElementType) => {
     const { value } = target;
     if (value.length >= 3) {
-      setDisableButton(false);
+      setDisabledButton(false);
       setLoginInfo({ name: target.value });
     } else {
-      setDisableButton(true);
+      setDisabledButton(true);
     }
   };
 
@@ -43,10 +42,15 @@ function Login() {
         onChange={ handleChange }
         data-testid="login-name-input"
         type="text"
-        name="login-input"
+        name="login-name"
         placeholder="Qual é o seu nome?"
       />
-      <button data-testid="login-submit-button" disabled={ disableButton }>Entrar</button>
+      <button
+        data-testid="login-submit-button"
+        disabled={ disabledButton }
+      >
+        Entrar
+      </button>
     </form>
   );
 }
