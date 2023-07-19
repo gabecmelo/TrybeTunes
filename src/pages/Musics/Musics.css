@@ -1,8 +1,8 @@
 .voltar {
-  position: absolute;
-  left: 2%;
-  top: 2%;
   cursor: pointer;
+  left: 2%;
+  position: absolute;
+  top: 2%;
 }
 
 .musics-content {
