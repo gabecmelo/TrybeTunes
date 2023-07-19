@@ -5,3 +5,17 @@
   padding: 10px;
   width: 90%;
 }
+
+.checkbox {
+  display: none;
+}
+
+.favorite {
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+}
+
+.favorite img {
+  margin-right: 5px;
+}
