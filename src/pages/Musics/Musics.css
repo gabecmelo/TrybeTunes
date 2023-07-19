@@ -1,0 +1,14 @@
+.musics-content {
+  align-items: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.album-container {
+  width: 30%;
+}
+
+.musics-container {
+  display: flex;
+  flex-direction: column;
+}

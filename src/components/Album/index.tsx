@@ -5,7 +5,6 @@ import { AlbumType } from '../../types';
 function Album({ album }: { album: AlbumType }) {
   const { /* artistId, */ artistName, collectionId, collectionName,
     /* collectionPrice, */ artworkUrl100/* , releaseDate, trackCount */ } = album;
-  console.log(album);
 
   return (
     <div className="album-card">
@@ -14,6 +13,7 @@ function Album({ album }: { album: AlbumType }) {
         className="collection-name"
         data-testid={ `link-to-album-${collectionId}` }
         to={ `/album/${collectionId}` }
+        state={ { collectionId } }
       >
         {collectionName}
       </Link>

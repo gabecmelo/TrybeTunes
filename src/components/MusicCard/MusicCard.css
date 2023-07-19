@@ -1,0 +1,7 @@
+.music-card {
+  border-bottom: 1px solid rgb(155, 155, 155);
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  width: 90%;
+}
