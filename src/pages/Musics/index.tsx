@@ -27,7 +27,7 @@ function Musics() {
 
   const handleBack = () => {
     navigate(-1);
-  }
+  };
 
   if (isLoading) {
     return <Loading />;
@@ -35,7 +35,7 @@ function Musics() {
 
   return (
     <div className="musics-content">
-      <h3 className='voltar' onClick={ handleBack }>Voltar</h3>
+      <button className="voltar" onClick={ handleBack }>Voltar</button>
       <div className="album-container">
         <img src={ album?.artworkUrl100 } alt={ `Album ${album?.collectionName}` } />
         <h1 data-testid="album-name">{album?.collectionName}</h1>
