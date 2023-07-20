@@ -6,9 +6,10 @@
   width: 90%;
 }
 
-.checkbox {
+/* .checkbox {
   display: none;
-}
+  para passar no teste, o checkbox deve estar visível
+} */
 
 .favorite {
   align-items: center;

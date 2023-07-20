@@ -1,6 +1,7 @@
 import './MusicCard.css';
 import { useState } from 'react';
 import { SongType } from '../../types';
+import { addSong, removeSong } from '../../services/favoriteSongsAPI';
 
 function MusicCard({ music }: { music: SongType }) {
   const { trackId, trackName, previewUrl } = music;
@@ -8,6 +9,11 @@ function MusicCard({ music }: { music: SongType }) {
 
   const handleChange = ({ target }: React.ChangeEvent<HTMLInputElement>) => {
     setIsChecked(target.checked);
+    if (target.checked) {
+      addSong(music);
+    } else {
+      removeSong(music);
+    }
   };
 
   return (
