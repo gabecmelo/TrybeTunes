@@ -5,6 +5,7 @@ import getMusics from '../../services/musicsAPI';
 import Loading from '../../components/Loading';
 import { AlbumType, SongType } from '../../types';
 import MusicCard from '../../components/MusicCard';
+import { getFavoriteSongs } from '../../services/favoriteSongsAPI';
 
 function Musics() {
   const location = useLocation();
@@ -12,6 +13,15 @@ function Musics() {
   const [isLoading, setIsLoading] = useState<boolean>(true);
   const [musics, setMusics] = useState<SongType[]>();
   const [album, setAlbum] = useState<AlbumType>();
+  const [favoriteMusics, setFavoriteMusics] = useState<SongType[]>();
+
+  useEffect(() => {
+    const getFavoriteMusics = async () => {
+      const favoriteSongs = await getFavoriteSongs();
+      setFavoriteMusics(favoriteSongs);
+    };
+    getFavoriteMusics();
+  }, []);
 
   useEffect(() => {
     const findMusics = async () => {
@@ -39,7 +49,11 @@ function Musics() {
       <main className="musics-container">
         {
           musics && musics.map((music) => {
-            return <MusicCard key={ music.trackId } music={ music } />;
+            return (<MusicCard
+              key={ music.trackId }
+              favoriteMusics={ favoriteMusics }
+              music={ music }
+            />);
           })
         }
       </main>

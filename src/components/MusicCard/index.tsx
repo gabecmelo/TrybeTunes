@@ -1,11 +1,22 @@
 import './MusicCard.css';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { SongType } from '../../types';
 import { addSong, removeSong } from '../../services/favoriteSongsAPI';
 
-function MusicCard({ music }: { music: SongType }) {
+type MusicCardProps = {
+  music: SongType
+  favoriteMusics: SongType[] | undefined
+};
+
+function MusicCard({ music, favoriteMusics }: MusicCardProps) {
   const { trackId, trackName, previewUrl } = music;
   const [isChecked, setIsChecked] = useState<boolean>(false);
+
+  useEffect(() => {
+    const isFavorite = favoriteMusics?.some((favoriteMusic) => favoriteMusic
+      .trackId === trackId);
+    setIsChecked(!!isFavorite);
+  }, [favoriteMusics, trackId]);
 
   const handleChange = ({ target }: React.ChangeEvent<HTMLInputElement>) => {
     setIsChecked(target.checked);
@@ -44,6 +55,7 @@ function MusicCard({ music }: { music: SongType }) {
           onChange={ handleChange }
           type="checkbox"
           id={ String(trackId) }
+          checked={ isChecked }
         />
       </label>
 
