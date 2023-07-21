@@ -1,3 +1,4 @@
+import './EditProfile.css';
 import { useEffect, useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { getUser, updateUser } from '../../services/userAPI';
@@ -65,7 +66,7 @@ function EditProfileComponent() {
   }
 
   return (
-    <form onSubmit={ handleSubmit }>
+    <form className="edit-profile-form" onSubmit={ handleSubmit }>
       <Link to="/profile/edit">Editar perfil</Link>
       <fieldset>
         <img
@@ -74,6 +75,7 @@ function EditProfileComponent() {
           alt="Profile"
         />
         <input
+          className="edit-profile-input"
           onChange={ handleChange }
           data-testid="edit-input-image"
           type="text"
@@ -88,6 +90,7 @@ function EditProfileComponent() {
         <h2>Nome</h2>
         <p>Fique à vontade para usar seu nome social</p>
         <input
+          className="edit-profile-input"
           onChange={ handleChange }
           data-testid="edit-input-name"
           type="text"
@@ -102,6 +105,7 @@ function EditProfileComponent() {
         <h2>E-mail</h2>
         <p>Escolha um e-mail que consulte diariamente</p>
         <input
+          className="edit-profile-input"
           onChange={ handleChange }
           data-testid="edit-input-email"
           type="text"
@@ -115,6 +119,7 @@ function EditProfileComponent() {
       <label htmlFor="description">
         <h2>Descrição</h2>
         <textarea
+          className="edit-profile-textarea"
           onChange={ handleChange }
           data-testid="edit-input-description"
           name="description"
@@ -125,6 +130,7 @@ function EditProfileComponent() {
         />
       </label>
       <button
+        className="edit-profile-button"
         data-testid="edit-button-save"
         disabled={ !isValidCamps }
       >

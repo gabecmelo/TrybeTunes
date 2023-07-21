@@ -1,0 +1,25 @@
+.profile-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 50vh;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.profile-container * {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-container div {
+  margin-bottom: 1.5rem;
+}
+
+.profile-image {
+  border-radius: 50%;
+  height: 150px;
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  width: 150px;
+}

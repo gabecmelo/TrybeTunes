@@ -1,11 +1,23 @@
 .musics-content {
   align-items: center;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .album-container {
-  width: 30%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin: 2vw;
+}
+
+.album-container img {
+  border-radius: 50%;
+  height: 200px;
+  margin-bottom: 1rem;
+  object-fit: cover;
+  width: 200px;
 }
 
 .musics-container {

@@ -1,6 +1,10 @@
+import './Loading.css';
+
 function Loading() {
   return (
-    <h1>Carregando...</h1>
+    <div className="loading-container">
+      <h1>Carregando...</h1>
+    </div>
   );
 }
 

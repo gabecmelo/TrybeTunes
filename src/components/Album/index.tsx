@@ -3,8 +3,7 @@ import { Link } from 'react-router-dom';
 import { AlbumType } from '../../types';
 
 function Album({ album }: { album: AlbumType }) {
-  const { /* artistId, */ artistName, collectionId, collectionName,
-    /* collectionPrice, */ artworkUrl100/* , releaseDate, trackCount */ } = album;
+  const { artistName, collectionId, collectionName, artworkUrl100 } = album;
 
   return (
     <div className="album-card">

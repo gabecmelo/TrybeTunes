@@ -1,3 +1,4 @@
+import './Profile.css';
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { getUser } from '../../services/userAPI';
@@ -24,19 +25,24 @@ function ProfileComponent() {
   }
 
   return (
-    <main>
-      <img
-        data-testid="profile-image"
-        src={ user?.image || 'https://www.gov.br/cdn/sso-status-bar/src/image/user.png' }
-        alt="Profile"
-      />
-      <Link to="/profile/edit">Editar perfil</Link>
-      <h2>Nome</h2>
-      <span>{user?.name}</span>
-      <h2>E-mail</h2>
-      <span>{user?.email}</span>
-      <h2>Descrição</h2>
-      <span>{user?.description}</span>
+    <main className="profile-container">
+      <div>
+        <img
+          className="profile-image"
+          data-testid="profile-image"
+          src={ user?.image || 'https://www.gov.br/cdn/sso-status-bar/src/image/user.png' }
+          alt="Profile"
+        />
+        <Link to="/profile/edit">Editar perfil</Link>
+      </div>
+      <div className="infos">
+        <h2>Nome</h2>
+        <span>{user?.name}</span>
+        <h2>E-mail</h2>
+        <span>{user?.email}</span>
+        <h2>Descrição</h2>
+        <span>{user?.description}</span>
+      </div>
     </main>
   );
 }

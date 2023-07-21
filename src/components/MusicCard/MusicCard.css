@@ -1,22 +1,30 @@
 .music-card {
-  border-bottom: 1px solid rgb(155, 155, 155);
+  align-items: center;
+  border: 1px solid rgb(155, 155, 155);
+  border-radius: 5px;
   display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  width: 90%;
+  margin-bottom: 2rem;
+  padding: 2%;
 }
 
-/* .checkbox {
-  display: none;
-  para passar no teste, o checkbox deve estar visível
-} */
+.music-card p {
+  font-size: 18px;
+  margin-right: 15px;
+}
 
-.favorite {
-  align-items: center;
-  cursor: pointer;
-  display: flex;
+.music-card audio {
+  border-radius: 7px;
+  width: 100%;
 }
 
 .favorite img {
-  margin-right: 5px;
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  height: 24px;
+  margin-left: 0.7rem;
+}
+
+.checkbox {
+  display: none;
 }

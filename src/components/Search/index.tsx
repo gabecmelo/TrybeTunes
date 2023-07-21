@@ -59,8 +59,8 @@ function SearchComponent() {
   }
 
   return (
-    <div className="page">
-      <form onSubmit={ handleSubmit }>
+    <div className="search-container">
+      <form className="search-form" onSubmit={ handleSubmit }>
         <input
           onChange={ handleChange }
           data-testid="search-artist-input"
@@ -85,7 +85,7 @@ function SearchComponent() {
                 Resultado de álbuns de:
                 {` ${search}`}
               </h1>
-              <main>
+              <main className="results">
                 {albums.map((album) => {
                   return <Album key={ album.collectionId } album={ album } />;
                 })}

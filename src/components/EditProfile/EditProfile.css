@@ -1,0 +1,31 @@
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.edit-profile-input {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  padding: 10px;
+}
+
+.edit-profile-textarea {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  padding: 10px;
+  resize: vertical;
+}
+
+.edit-profile-button {
+  background-color: #007bff;
+  border-radius: 4px;
+  color: white;
+  padding: 10px 20px;
+}
+
+.edit-profile-button:hover {
+  background-color: #0056b3;
+}

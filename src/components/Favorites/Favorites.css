@@ -1,0 +1,14 @@
+.musics-content {
+  margin-top: 2%;
+}
+
+.musics-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.musics-container div {
+  width: 100%;
+}

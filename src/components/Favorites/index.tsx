@@ -1,3 +1,4 @@
+import './Favorites.css';
 import { useEffect, useState } from 'react';
 import { getFavoriteSongs } from '../../services/favoriteSongsAPI';
 import { SongType } from '../../types';
@@ -22,16 +23,18 @@ function FavoritesComponent() {
   }
 
   return (
-    <div>
-      {
-        favoriteMusics?.map((music) => {
-          return (<MusicCard
-            music={ music }
-            key={ music.trackId }
-            favoriteMusics={ favoriteMusics }
-          />);
-        })
-      }
+    <div className="musics-content">
+      <div className="musics-container">
+        {
+          favoriteMusics?.map((music) => {
+            return (<MusicCard
+              music={ music }
+              key={ music.trackId }
+              favoriteMusics={ favoriteMusics }
+            />);
+          })
+        }
+      </div>
     </div>
   );
 }
