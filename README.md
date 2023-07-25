@@ -9,7 +9,7 @@ Este projeto consiste em um site de música desenvolvido com React. O site permi
 
 ## Link para Acesso
 
-[Clique aqui para acessar o site TrybeTunes](https://gabecmelo.github.io/TrybeTunes/)
+<a href="https://gabecmelo.github.io/TrybeTunes/" target="_blank">Clique aqui para acessar o site TrybeTunes</a>
 
 ## Tecnologias utilizadas
 
