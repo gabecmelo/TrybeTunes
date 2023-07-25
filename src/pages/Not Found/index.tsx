@@ -4,7 +4,7 @@ function NotFound() {
   return (
     <>
       <h1>Essa página não existe</h1>
-      <Link to="/">Voltar ao início</Link>
+      <Link to="/TrybeTunes/">Voltar ao início</Link>
     </>
   );
 }

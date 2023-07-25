@@ -26,11 +26,11 @@ function Header() {
 
   return (
     <header data-testid="header-component">
-      <NavLink to="/"><h1>TrybeTunes</h1></NavLink>
+      <NavLink to="/TrybeTunes/"><h1>TrybeTunes</h1></NavLink>
       <nav>
-        <NavLink data-testid="link-to-search" to="/search">Pesquisar</NavLink>
-        <NavLink data-testid="link-to-favorites" to="/favorites">Favoritas</NavLink>
-        <NavLink data-testid="link-to-profile" to="/profile">Perfil</NavLink>
+        <NavLink data-testid="link-to-search" to="/TrybeTunes/search">Pesquisar</NavLink>
+        <NavLink data-testid="link-to-favorites" to="/TrybeTunes/favorites">Favoritas</NavLink>
+        <NavLink data-testid="link-to-profile" to="/TrybeTunes/profile">Perfil</NavLink>
       </nav>
       <span data-testid="header-user-name">{username}</span>
     </header>

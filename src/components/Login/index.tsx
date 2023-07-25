@@ -16,7 +16,7 @@ function Login() {
       setIsLoading(true);
       await createUser(loginInfo);
       setIsLoading(false);
-      navigate('/search');
+      navigate('/TrybeTunes/search');
     };
     getUser();
   };

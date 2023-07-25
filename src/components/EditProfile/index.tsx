@@ -56,7 +56,7 @@ function EditProfileComponent() {
     setIsLoading(true);
     await updateUser(profileInfo);
     setIsLoading(false);
-    navigate('/profile');
+    navigate('/TrybeTunes/profile');
   };
 
   if (isLoading) {
@@ -67,7 +67,7 @@ function EditProfileComponent() {
 
   return (
     <form className="edit-profile-form" onSubmit={ handleSubmit }>
-      <Link to="/profile/edit">Editar perfil</Link>
+      <Link to="/TrybeTunes/profile/edit">Editar perfil</Link>
       <fieldset>
         <img
           data-testid="profile-image"

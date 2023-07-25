@@ -33,7 +33,7 @@ function ProfileComponent() {
           src={ user?.image || 'https://www.gov.br/cdn/sso-status-bar/src/image/user.png' }
           alt="Profile"
         />
-        <Link to="/profile/edit">Editar perfil</Link>
+        <Link to="/TrybeTunes/profile/edit">Editar perfil</Link>
       </div>
       <div className="infos">
         <h2>Nome</h2>

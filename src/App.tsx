@@ -11,13 +11,13 @@ import EditProfile from './pages/EditProfile';
 function App() {
   return (
     <Routes>
-      <Route path="/" element={ <Login /> } />
+      <Route path="/TrybeTunes" element={ <Login /> } />
       <Route element={ <Layout /> }>
-        <Route path="/search" element={ <Search /> } />
-        <Route path="/album/:id" element={ <Musics /> } />
-        <Route path="/favorites" element={ <Favorites /> } />
-        <Route path="/profile" element={ <Profile /> } />
-        <Route path="/profile/edit" element={ <EditProfile /> } />
+        <Route path="/TrybeTunes/search" element={ <Search /> } />
+        <Route path="/TrybeTunes/album/:id" element={ <Musics /> } />
+        <Route path="/TrybeTunes/favorites" element={ <Favorites /> } />
+        <Route path="/TrybeTunes/profile" element={ <Profile /> } />
+        <Route path="/TrybeTunes/profile/edit" element={ <EditProfile /> } />
         <Route path="*" element={ <NotFound /> } />
       </Route>
     </Routes>

@@ -11,14 +11,14 @@ function Album({ album }: { album: AlbumType }) {
       <Link
         className="collection-name"
         data-testid={ `link-to-album-${collectionId}` }
-        to={ `/album/${collectionId}` }
+        to={ `/TrybeTunes/album/${collectionId}` }
         state={ { collectionId } }
       >
         {collectionName}
       </Link>
       <Link
         className="artist-name"
-        to={ `/${artistName}` }
+        to={ `/TrybeTunes/${artistName}` }
       >
         <span>{artistName}</span>
       </Link>

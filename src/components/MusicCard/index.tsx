@@ -29,7 +29,7 @@ function MusicCard({ music, favoriteMusics }: MusicCardProps) {
   };
 
   const location = useLocation();
-  if (location.pathname === '/favorites') {
+  if (location.pathname === '/TrybeTunes/favorites') {
     return (
       <div>
         {
