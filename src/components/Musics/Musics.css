@@ -5,6 +5,10 @@
   justify-content: center;
 }
 
+.musics-container {
+  width: 70%;
+}
+
 .album-container {
   align-items: center;
   display: flex;
@@ -18,9 +22,4 @@
   margin-bottom: 1rem;
   object-fit: cover;
   width: 200px;
-}
-
-.musics-container {
-  display: flex;
-  flex-direction: column;
 }
