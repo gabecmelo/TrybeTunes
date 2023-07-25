@@ -7,6 +7,10 @@ Este projeto consiste em um site de música desenvolvido com React. O site permi
 *   Ouvir músicas, álbuns e playlists.
 *   Favoritar e gerenciar as músicas desejadas;
 
+## Link para Acesso
+
+[Clique aqui para acessar o site TrybeTunes](https://gabecmelo.github.io/TrybeTunes/)
+
 ## Tecnologias utilizadas
 
 *   ReactJS
@@ -17,12 +21,8 @@ Este projeto consiste em um site de música desenvolvido com React. O site permi
 *   Git
 *   GitHub
 *   Vite
-  
-## Link para Acesso
 
-Clique [aqui](gabecmelo.github.io/TrybeTunes/) para acessar o site.
-
-## Instalação
+## Instalação {#instalacao}
 
 1.  Clone o repositório do projeto para sua máquina local.
 
@@ -44,7 +44,7 @@ Clique [aqui](gabecmelo.github.io/TrybeTunes/) para acessar o site.
 
 ## Como usar
 
-Após seguir as [instruções de instalação](#instala%C3%A7%C3%A3o) e iniciar o servidor local, acesse a aplicação através do seu navegador em `http://localhost:3000`.
+Após seguir as [instruções de instalação](#instalacao) e iniciar o servidor local, acesse a aplicação através do seu navegador em `http://localhost:5174`.
 
 Na página inicial, é possível pesquisar por artistas, músicas e álbuns. Ao fazer uma pesquisa, é exibida uma lista de resultados.
 
