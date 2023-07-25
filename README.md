@@ -22,7 +22,7 @@ Este projeto consiste em um site de música desenvolvido com React. O site permi
 *   GitHub
 *   Vite
 
-## Instalação {#instalacao}
+## Instalação
 
 1.  Clone o repositório do projeto para sua máquina local.
 
