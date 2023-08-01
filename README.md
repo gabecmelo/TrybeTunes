@@ -30,6 +30,11 @@ O projeto TrybeTunes consiste em um site de música desenvolvido com React. O si
 <!---->
 
     git clone https://github.com/seu-username/projeto-site-musica-react.git
+ou
+
+<!---->
+
+    git clonegit@github.com:gabecmelo/TrybeTunes.git
 
 2.  Instale as dependências do projeto com o comando:
 
