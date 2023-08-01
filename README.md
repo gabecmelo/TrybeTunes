@@ -1,6 +1,6 @@
-# Projeto Site de Música com React
+# Descrição do Projeto
 
-Este projeto consiste em um site de música desenvolvido com React. O site permite aos usuários navegar e pesquisar por diversas músicas, artistas e álbuns. O objetivo do projeto é desenvolver uma aplicação web que possibilite:
+O projeto TrybeTunes consiste em um site de música desenvolvido com React. O site permite aos usuários navegar e pesquisar por diversas músicas, artistas e álbuns. O objetivo do projeto é desenvolver uma aplicação web que possibilite:
 
 *   Gerenciar seus dados de usuário;
 *   Buscar por artistas e músicas;
