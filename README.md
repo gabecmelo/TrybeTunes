@@ -41,7 +41,7 @@ O projeto TrybeTunes consiste em um site de música desenvolvido com React. O si
 
 <!---->
 
-    npm start
+    npm run dev
 
 ## Como usar
 
