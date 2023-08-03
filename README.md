@@ -53,7 +53,7 @@ ou
 
 ## Como usar
 
-Após seguir as [instruções de instalação](#instalacao) e iniciar o servidor local, acesse a aplicação através do seu navegador em `http://localhost:5174`.
+Após seguir as [instruções de instalação](#instalacao) e iniciar o servidor local, acesse a aplicação através do seu navegador em `http://localhost:5174/TrybeTunes/`.
 
 Na página inicial, é possível pesquisar por artistas, músicas e álbuns. Ao fazer uma pesquisa, é exibida uma lista de resultados.
 
