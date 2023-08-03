@@ -12,6 +12,9 @@ O projeto TrybeTunes consiste em um site de música desenvolvido com React. O si
 
 <a href="https://gabecmelo.github.io/TrybeTunes/" target="_blank">Clique aqui para acessar o site TrybeTunes</a>
 
+<img width="75%" src="ScreenshotExample.png" alt="TrybeTunes Screenshot">
+
+
 ## Tecnologias utilizadas
 
 *   ReactJS
